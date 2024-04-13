@@ -4,7 +4,7 @@ from dspy.evaluate import Evaluate
 from dspy.teleprompt import BootstrapFewShot
 
 # Set up the LM
-turbo = dspy.OpenAI(model='gpt-3.5-turbo-instruct', max_tokens=250)
+turbo = dspy.OpenAI(model='gpt-3.5-turbo', max_tokens=250)
 dspy.settings.configure(lm=turbo)
 
 # Load math questions from the GSM8K dataset
